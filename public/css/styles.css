@@ -20,6 +20,15 @@ body {
   
   .head-title {
     padding: 0 1rem;
+    font-weight: 900;
+  }
+
+  .fixed-top {
+    background-image: linear-gradient(
+      45deg,
+      rgb(30, 6, 245),
+      rgba(0, 110, 255, 0.777)
+    );
   }
   
   /* Nav Links Styling */
@@ -30,13 +39,22 @@ body {
   
   .nav-link:hover {
     color: antiquewhite;
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   
   /* Profile Image */
   
   img {
     opacity: 92%;
+  }
+  
+  .profile-pic {
+    margin: 0 auto;
+    border: solid 8px antiquewhite;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
   }
   
   /* Work Section */
@@ -61,10 +79,12 @@ body {
     transform: scale(1.01);
     transition: 0.1s;
   }
+
   .col a,
   .col-lg-12 a {
     text-decoration: none;
   }
+
   /* Contact Section */
   
   #Contact {
@@ -88,6 +108,7 @@ body {
     padding-right: 1rem;
     font-size: 110%;
   }
+
   .social li a:hover {
     color: black;
   }
@@ -117,8 +138,4 @@ body {
     height: 20vh;
   }
   
-  span {
-    font-weight: 700;
-  }
-  
-  /* Responsiveness is built-in using Bootstrap components like container class, etc. */
+  /* Responsiveness is built-in using Bootstrap components like container class, col, etc. */
