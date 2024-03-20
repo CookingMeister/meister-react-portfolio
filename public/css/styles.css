@@ -1,0 +1,124 @@
+/* Body Styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(
+      45deg,
+      rgb(30, 6, 245),
+      rgba(0, 110, 255, 0.777)
+    );
+    color: black;
+  }
+  
+  /* Heading */
+  
+  header {
+    padding-left: 1rem;
+  }
+  
+  .head-title {
+    padding: 0 1rem;
+  }
+  
+  /* Nav Links Styling */
+  
+  .nav-link {
+    color: black;
+  }
+  
+  .nav-link:hover {
+    color: antiquewhite;
+    transform: scale(1.05);
+  }
+  
+  /* Profile Image */
+  
+  img {
+    opacity: 92%;
+  }
+  
+  /* Work Section */
+  
+  .bg-image {
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 88%;
+  }
+  
+  #Work {
+    box-shadow: 0px -10px 20px -10px #191970;
+    background-image: linear-gradient(
+      45deg,
+      rgb(0, 110, 255, 0.777),
+      rgba(30, 6, 245, 0.777)
+    );
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+    transition: 0.1s;
+  }
+  .col a,
+  .col-lg-12 a {
+    text-decoration: none;
+  }
+  /* Contact Section */
+  
+  #Contact {
+    background-image: linear-gradient(
+      45deg,
+      rgb(30, 6, 245, 0.777),
+      rgba(0, 110, 255, 0.777)
+    );
+    box-shadow: 0px -10px 20px -10px #191970;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 1rem;
+    font-size: 110%;
+  }
+  .social li a:hover {
+    color: black;
+  }
+  
+  .social li a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  
+  #footer {
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 0.856),
+      rgba(255, 251, 0, 0.677)
+    );
+    box-shadow: 0px -10px 20px -10px midnightblue;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    text-align: center;
+    height: 20vh;
+  }
+  
+  span {
+    font-weight: 700;
+  }
+  
+  /* Responsiveness is built-in using Bootstrap components like container class, etc. */
