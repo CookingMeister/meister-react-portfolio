@@ -1,17 +1,17 @@
 import React from 'react';
 
-function WorkCard() {
+function WorkCard(props) {
   return (
     <div className="col">
-      <a href="https://github.com/CookingMeister/Portfolio-dev">
+      <a href={props.href}>
         <div
           className="bg-image h-100 card text-bg-dark rounded-4 shadow-lg"
-          style={{ backgroundImage: "url('/img/Mockup.png')" }}
-          alt="a portfolio website showing title bar, an about section and profile pic"
+          style={{ backgroundImage: `url(${props.image})` }}
+          alt= {props.alt}
         >
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 className="py-4 mt-2 mb-4 display-8 lh-1">
-              Development Portfolio
+              {props.title}
             </h3>
             <ul className="d-flex list-unstyled mt-auto">
               <li className="me-auto">
