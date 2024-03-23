@@ -12,9 +12,8 @@ function About() {
             <p className="lead fw-bold text-body-emphasis mb-3">
               Developer, Designer, Professional Chef.
             </p>
-            <p className="lead text-body-emphasis mb-2">I love
-              being outdoors. Located in the river valley of Fredericton, New
-              Brunswick, Canada. I am an University of New Brunswick Alumni.</p>
+            <p className="lead text-body-emphasis mb-2">A University of New Brunswick Alumni located in the river valley of Fredericton, New
+              Brunswick, Canada. With a background in Psychology, a former culinary professional turned developer, when not coding or cooking, I love being active outdoors. </p>
             
             <img
               src="/img/profile.png"

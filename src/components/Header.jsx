@@ -1,9 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Link from './Link';
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = window.scrollY;
+      const shouldChangeColor = scrollHeight > 50;
+
+      setIsScrolled(shouldChangeColor);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <section id="Heading" className="container">
-      <header className="d-flex flex-wrap justify-content-center py-3 mb-4 fixed-top">
+    <section id="Heading">
+      <header
+          style={{
+            position: 'fixed',
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent:'center',
+            top: '0',
+            padding: '20px 0',
+            width: '100%',
+            zIndex: '10',
+            backgroundColor: isScrolled ? '#faebd7' : 'blue',
+            transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
+            paddingLeft: '1rem',
+          }}
+          >
         <a
           href="index.html"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -29,31 +61,26 @@ function Header() {
         </a>
 
         <ul className="nav nav-pills">
-          <li className="nav-item">
-            <a href="#Heading" className="nav-link">
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#About" className="nav-link">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#Work" className="nav-link">
-              Work
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#Resume" className="nav-link">
-              Resume
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#Contact" className="nav-link">
-              Contact
-            </a>
-          </li>
+         <Link
+            href="index"
+            name="Home"
+         />
+         <Link 
+            href="#About"
+            name="About"
+         />
+         <Link 
+            href="#Work"
+            name="Work"
+         />
+         <Link 
+            href="#Resume"
+            name="Resume"
+         />
+         <Link 
+            href="#Contact"
+            name="Contact"
+         />
         </ul>
       </header>
     </section>
