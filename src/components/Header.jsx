@@ -7,7 +7,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.scrollY;
-      const shouldChangeColor = scrollHeight > 50;
+      const shouldChangeColor = scrollHeight > 30 && scrollHeight < 840;
 
       setIsScrolled(shouldChangeColor);
     };
@@ -60,26 +60,31 @@ function Header() {
           </span>
         </a>
 
-        <ul className="nav nav-pills">
+        <ul className="nav nav-pills" >
          <Link
             href="index"
             name="Home"
+            isScrolled={isScrolled}
          />
          <Link 
             href="#About"
             name="About"
+            isScrolled={isScrolled}
          />
          <Link 
             href="#Work"
             name="Work"
+            isScrolled={isScrolled}
          />
          <Link 
             href="#Resume"
             name="Resume"
+            isScrolled={isScrolled}
          />
          <Link 
             href="#Contact"
             name="Contact"
+            isScrolled={isScrolled}
          />
         </ul>
       </header>

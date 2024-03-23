@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       45deg,
       rgb(30, 6, 245),
       rgba(0, 110, 255, 0.777)
-    );
+    ); */
     color: black;
   }
   
@@ -21,15 +21,17 @@ body {
   
   /* Nav Links Styling */
   
-  .nav-link {
-    color: black;
-  }
-  
-  .nav-link:hover {
-    color: antiquewhite;
+  /* .nav-link:hover {
     transform: scale(1.02);
+  } */
+
+  #About {
+    background-image: linear-gradient(
+      45deg,
+      rgb(30, 6, 245),
+      rgba(0, 110, 255, 0.777)
+    );
   }
-  
   /* Profile Image */
   
   img {
@@ -55,38 +57,55 @@ body {
   }
   
   #Work {
-    box-shadow: 0px -10px 20px -10px #191970;
-    background-image: linear-gradient(
+    /* box-shadow: 0px -10px 20px -10px #191970; */
+    background-color: antiquewhite;
+    /* background-image: linear-gradient(
       45deg,
       rgb(0, 110, 255, 0.777),
       rgba(30, 6, 245, 0.777)
-    );
+    ); */
   }
 
   .card {
-    box-shadow: -1px 2px 4px 2px #000000!important;
+    box-shadow: 1px 1px 8px 2px #000000!important;
+    height: 17vh;
+    background-color: lightskyblue!important;
   }
 
-  .card:hover {
-    box-shadow: -1px 2px 4px 2px antiquewhite!important;
-    transform: scale(1.0);
-    transition: 0.1s;
+.card:hover {
+    /* box-shadow: 1px 2px 8px 2px blue!important; */
+    transform: scale(1.005);
+    transition: 0.01s; 
   }
 
+.profile-sm {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
   .col a,
   .col-lg-12 a {
     text-decoration: none;
   }
 
+  #Resume {
+    background-image: linear-gradient(
+      45deg,
+      rgb(30, 6, 245),
+      rgba(0, 110, 255, 0.777)
+    );
+  }
+
   /* Contact Section */
   
   #Contact {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       45deg,
       rgb(30, 6, 245, 0.777),
       rgba(0, 110, 255, 0.777)
-    );
-    box-shadow: 0px -10px 20px -10px #191970;
+    ); */
+    background-color: antiquewhite;
+    /* box-shadow: 0px -10px 20px -10px #191970; */
   }
   
   .social {
@@ -107,7 +126,7 @@ body {
   }
   
   .social li a {
-    color: antiquewhite;
+    color: blue;
     text-decoration: none;
   }
   
@@ -116,19 +135,23 @@ body {
   #footer {
     background-image: linear-gradient(
       45deg,
+      rgb(30, 6, 245),
+      rgba(0, 110, 255, 0.777)
+    );
+    /* background-image: linear-gradient(
+      45deg,
       rgba(255, 0, 0, 0.856),
       rgba(255, 251, 0, 0.677)
-    );
-    box-shadow: 0px -10px 20px -10px midnightblue;
+    ); */
+    /* box-shadow: 0px -10px 20px -10px midnightblue; */
   }
   
   .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12vh;
     text-align: center;
-    height: 20vh;
+    height: 15vh;
   }
   
   /* Responsiveness is built-in using Bootstrap components like container class, col, etc. */
