@@ -9,7 +9,7 @@ function WorkCard(props) {
           style={{ backgroundImage: `url(${props.image})` }}
           alt= {props.alt}
         >
-          <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <div className="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-1">
             <h3 className="py-4 mt-2 mb-4 display-8 lh-1">
               {props.title}
             </h3>

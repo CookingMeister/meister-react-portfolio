@@ -6,22 +6,38 @@ function Work() {
     <section id="Work">
       <div className="container px-4 py-5">
         <h2 className="fs-2 pb-2">Work</h2>
-        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      
+        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">      
+         
           <WorkCard
-            href="https://github.com/CookingMeister/Portfolio-dev"
-            image="/img/Mockup.png"
-            alt="a portfolio website showing title bar, an about section and profile pic"
-            title="Development Portfolio"
-
+            title="SimplyFit App"
+            href="https://github.com/CookingMeister/fitness-tracker-mvc"
+            image="/img/dashboard.png"
+          />
+          <WorkCard 
+            title="Christmas Movie Generator"
+            href="https://github.com/CookingMeister/christmas-movie-generator"
+            image="/img/XmasMockup.png"
+            />
+          <WorkCard
+            title="Tech Blog"
+            href="https://github.com/CookingMeister/tech-blog-sequelize"
+            image="/img/blog.png"
+            />
+          <WorkCard 
+            title="Weather Dashboard"
+            href="https://github.com/CookingMeister/weather-dashboard"
+            image="/img/weather.png"
+            />
+          <WorkCard
+            title="Note Taker"
+            href="https://github.com/CookingMeister/note-taker-express"
+            image="/img/Note.png"
           />
           <WorkCard
-            title="work 2"
+            href="https://github.com/CookingMeister/timedQuiz-JS-04"
+            title="JS Quiz"
+            image="/img/quiz.png"
           />
-          <WorkCard title="work 3" />
-          <WorkCard title="work 4" />
-          <WorkCard title="work 5" />
-          <WorkCard title="work 6" />
 
         </div>
       </div>
