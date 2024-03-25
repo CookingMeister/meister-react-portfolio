@@ -50,10 +50,10 @@ body {
   /* Work Section */
   
   .bg-image {
-    height: 60vh;
+    /* height: 60vh; */
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 88%;
+    /* opacity: 80%; */
   }
   
   #Work {
@@ -65,17 +65,11 @@ body {
       rgba(30, 6, 245, 0.777)
     ); */
   }
-
   .card {
     box-shadow: 1px 1px 8px 2px #000000!important;
     height: 17vh;
-    background-color: lightskyblue!important;
-  }
-
-.card:hover {
-    /* box-shadow: 1px 2px 8px 2px blue!important; */
-    transform: scale(1.005);
-    transition: 0.01s; 
+    width: auto;
+    /* background-color: lightskyblue!important; */
   }
 
 .profile-sm {
@@ -83,9 +77,8 @@ body {
   left: 0;
   bottom: 0;
 }
-  .col a,
-  .col-lg-12 a {
-    text-decoration: none;
+  .col a {
+    /* text-decoration: none; */
   }
 
   #Resume {
