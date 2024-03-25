@@ -35,12 +35,10 @@ function Header() {
             backgroundColor: isScrolled ? '#faebd7' : 'blue',
             transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
             paddingLeft: '1rem',
+            fontWeight: '600',
           }}
           >
-        <a
-          href="index.html"
-          className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
+        <div className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -56,10 +54,10 @@ function Header() {
             <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
             <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
           </svg>
-          <span className="fs-4 head-title">
-            Portfolio
+          <span className="fs-4 head-title mx-2">
+            Meister
           </span>
-        </a>
+        </div>
 
         <ul className="nav nav-pills" >
           <Fade cascade damping={0.2} triggerOnce>
@@ -74,8 +72,8 @@ function Header() {
             isScrolled={isScrolled}
          />
          <Link 
-            href="#Work"
-            name="Work"
+            href="#Portfolio"
+            name="Portfolio"
             isScrolled={isScrolled}
          />
          <Link 

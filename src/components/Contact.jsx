@@ -60,20 +60,7 @@ function Contact() {
             </button>
           </div>
         </form>
-        <div className="social">
-          <ul>
-            <li>
-              <a href="https://github.com/CookingMeister?tab=repositories">
-                Github
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/shawn-meister-bb646b29a/">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </section>
   );

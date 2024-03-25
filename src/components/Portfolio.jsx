@@ -2,15 +2,15 @@ import React from 'react';
 import WorkCard from './WorkCard';
 import { Fade } from "react-awesome-reveal";
 
-function Work() {
+function Portfolio() {
 
   return (
     <section id="Work">
       <div className="container px-4 py-5">
-        <h2 className="fs-2 pb-2">Work</h2>
+        <h2 className="fs-2 pb-2">Portfolio</h2>
         
         <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <Fade cascade damping={0.3} triggerOnce className='' >
+        <Fade cascade damping={0.3} triggerOnce>
           <WorkCard
             title='SimplyFit App'
             github="https://github.com/CookingMeister/fitness-tracker-mvc"
@@ -32,19 +32,19 @@ function Work() {
           <WorkCard
             title="Weather Dashboard"
             github="https://github.com/CookingMeister/weather-dashboard"
-            deployment="https://infinite-ocean-68541-91b9dc3361ab.herokuapp.com/"
+            deployment="https://cookingmeister.github.io/weather-dashboard/"
             image="/img/weather.png"
           />
           <WorkCard
             title="Note Taker"
             github="https://github.com/CookingMeister/note-taker-express"
-            deployment="https://infinite-ocean-68541-91b9dc3361ab.herokuapp.com/"
+            deployment="https://note-taker-express-2rft.onrender.com/"
             image="/img/Note.png"
           />
           <WorkCard
             github="https://github.com/CookingMeister/timedQuiz-JS-04"
             title="JS Quiz"
-            deployment="https://infinite-ocean-68541-91b9dc3361ab.herokuapp.com/"
+            deployment="https://cookingmeister.github.io/timedQuiz-JS-04/"
             image="/img/quiz.png"
           />
           </Fade>
@@ -54,4 +54,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Portfolio;

@@ -11,32 +11,8 @@ body {
     ); */
     color: black;
   }
-  
-  /* Heading */
-  
-  .head-title {
-    padding: 0 1rem;
-    font-weight: 900;
-  }
-  
-  /* Nav Links Styling */
-  
-  /* .nav-link:hover {
-    transform: scale(1.02);
-  } */
 
-  #About {
-    background-image: linear-gradient(
-      45deg,
-      rgb(30, 6, 245),
-      rgba(0, 110, 255, 0.777)
-    );
-  }
   /* Profile Image */
-  
-  img {
-    opacity: 92%;
-  }
   
   .profile-pic {
     margin: 0 auto;
@@ -57,7 +33,6 @@ body {
   }
   
   #Work {
-    /* box-shadow: 0px -10px 20px -10px #191970; */
     background-color: antiquewhite;
     /* background-image: linear-gradient(
       45deg,
@@ -68,8 +43,7 @@ body {
   .card {
     box-shadow: 1px 1px 8px 2px #000000!important;
     height: 17vh;
-    width: auto;
-    /* background-color: lightskyblue!important; */
+    width: auto;  
   }
 
 .profile-sm {
@@ -77,41 +51,17 @@ body {
   left: 0;
   bottom: 0;
 }
-  .col a {
-    /* text-decoration: none; */
-  }
-
-  #Resume {
-    background-image: linear-gradient(
-      45deg,
-      rgb(30, 6, 245),
-      rgba(0, 110, 255, 0.777)
-    );
-  }
 
   /* Contact Section */
   
   #Contact {
-    /* background-image: linear-gradient(
-      45deg,
-      rgb(30, 6, 245, 0.777),
-      rgba(0, 110, 255, 0.777)
-    ); */
     background-color: antiquewhite;
-    /* box-shadow: 0px -10px 20px -10px #191970; */
-  }
-  
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .social li {
     list-style-type: none;
     display: inline;
     padding-right: 1rem;
-    font-size: 110%;
   }
 
   .social li a:hover {
@@ -119,8 +69,7 @@ body {
   }
   
   .social li a {
-    color: blue;
-    text-decoration: none;
+    color: antiquewhite;
   }
   
   /* Footer */
@@ -136,15 +85,4 @@ body {
       rgba(255, 0, 0, 0.856),
       rgba(255, 251, 0, 0.677)
     ); */
-    /* box-shadow: 0px -10px 20px -10px midnightblue; */
   }
-  
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 15vh;
-  }
-  
-  /* Responsiveness is built-in using Bootstrap components like container class, col, etc. */

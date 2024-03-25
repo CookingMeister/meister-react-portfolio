@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Icon from './Icon';
 
 const WorkCard = (props) => {
   const [showTitle, setShowTitle] = useState(false);
@@ -17,7 +18,6 @@ const WorkCard = (props) => {
   const cardStyle = {
     backgroundImage: `url(${props.image})`,
     position: 'relative',
-    
   };
 
   const overlayStyles = {
@@ -34,7 +34,7 @@ const WorkCard = (props) => {
     color: 'black',
     padding: '1rem',
     transition: 'display 0.3s ease',
-    textDecoration: 'none'
+    textDecoration: 'none',
   };
 
   return (
@@ -46,30 +46,19 @@ const WorkCard = (props) => {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
-        <div className="d-flex flex-column p-5 pb-3 text-black text-shadow-1">
-          <ul className="d-flex list-unstyled mt-auto">
-            <li className="">
-              <img
-                src="/img/profile.png"
-                alt="Sunny outdoors profile by the water"
-                width="32"
-                height="32"
-                className="rounded-circle border border-white m-3 profile-sm"
-              />
-            </li>
-          </ul>
-        </div>
-        <div
-          className="rounded-4"
-          style={overlayStyles}
-        >
+        <Icon />
+
+        <div className="rounded-4" style={overlayStyles}>
           <h3>{props.title}</h3>
-          <a href={props.deployment} className="mx-1 p-2 lh-1">
-            * deployed app
-          </a>
-          <a href={props.github} className="mx-1 p-2 lh-1">
-            * github repo
-          </a>
+          <div style={{ display: 'flex' }}>
+            <a href={props.deployment} className="py-2">
+              <i className="fas fa-link fa-2x mx-3" style={{ color: 'red' }}></i>
+            </a>
+            <a href={props.github} className="py-2">
+              <i className="fab fa-github fa-2x mx-3" style={{ color: '' }}></i>
+            </a>
+          </div>
+          <Icon />
         </div>
       </div>
     </div>
