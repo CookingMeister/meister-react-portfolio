@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade, Zoom, Roll } from "react-awesome-reveal";
 
 function About() {
   return (
@@ -8,7 +8,7 @@ function About() {
       
   
         <div className="px-2 pt-5 mt-5 text-center">
-        <Fade duration={1600} direction='up' triggerOnce cascade>     
+        <Fade duration={1600} direction='down' triggerOnce >     
           <h1 className="display-4 fw-bold text-body-emphasis pt-5">
             I am Shawn Meister
           </h1>
@@ -18,15 +18,19 @@ function About() {
             <p className="lead fw-bold text-body-emphasis mb-3">
               Developer, Designer, Professional Chef
             </p>
-            <p className="lead text-body-emphasis mb-2">A UNB alumnus, I'm a Fredericton-based developer with a unique background. After pursuing Psychology and working as a culinary professional, I discovered my passion for coding. When not immersed in code or cooking up a storm, you'll find me exploring the great outdoors in the picturesque river valley of Fredericton, New Brunswick. </p>
             </Fade>
-            <Fade duration={1800} direction='up' triggerOnce cascade>
+            <Fade direction='up' duration={1800} triggerOnce>
+            <p className="lead text-body-emphasis mb-2">
+              A UNB alumnus, I'm a Fredericton-based developer with a unique background. After pursuing Psychology and working as a culinary professional, I discovered my passion for coding. When not immersed in code or cooking up a storm, you'll find me exploring the great outdoors in the picturesque river valley of Fredericton, New Brunswick.
+            </p>
+            </Fade>
+            {/* <Zoom duration={1800} triggerOnce> */}
             <img
               src="/img/profile.png"
               className="profile-pic my-5 img-fluid"
               alt="Sunny summer day profile picture of young man smiling outside."
             />
-            </Fade>
+            {/* </Zoom> */}
            
           </div>
           

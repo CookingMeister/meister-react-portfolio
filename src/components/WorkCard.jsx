@@ -38,7 +38,7 @@ const WorkCard = (props) => {
   };
 
   return (
-    <div className="col-lg-6 col-xl-4 col relative-card">
+    <div className="col col-xl-12">
       <div
         className="bg-image card rounded-4 shadow-lg"
         style={cardStyle}

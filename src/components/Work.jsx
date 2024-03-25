@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkCard from './WorkCard';
+import { Fade } from "react-awesome-reveal";
 
 function Work() {
 
@@ -7,7 +8,9 @@ function Work() {
     <section id="Work">
       <div className="container px-4 py-5">
         <h2 className="fs-2 pb-2">Work</h2>
+        
         <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <Fade cascade damping={0.3} triggerOnce className='' >
           <WorkCard
             title='SimplyFit App'
             github="https://github.com/CookingMeister/fitness-tracker-mvc"
@@ -44,6 +47,7 @@ function Work() {
             deployment="https://infinite-ocean-68541-91b9dc3361ab.herokuapp.com/"
             image="/img/quiz.png"
           />
+          </Fade>
         </div>
       </div>
     </section>

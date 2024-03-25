@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from './Link';
+import { Fade } from "react-awesome-reveal";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,6 +62,7 @@ function Header() {
         </a>
 
         <ul className="nav nav-pills" >
+          <Fade cascade damping={0.2} triggerOnce>
          <Link
             href="index"
             name="Home"
@@ -86,6 +88,7 @@ function Header() {
             name="Contact"
             isScrolled={isScrolled}
          />
+         </Fade>
         </ul>
       </header>
     </section>

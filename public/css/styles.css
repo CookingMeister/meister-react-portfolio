@@ -50,7 +50,7 @@ body {
   /* Work Section */
   
   .bg-image {
-    /* height: 60vh; */
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
     /* opacity: 80%; */
