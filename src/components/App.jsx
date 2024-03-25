@@ -5,13 +5,14 @@ import Work from './Work';
 import Resume from './Resume';
 import Contact from './Contact';
 import Footer from './Footer';
+import { Zoom } from "react-awesome-reveal";
 
 function App() {
   return (
     <div>
-      <Header />
+      <Header />      
       <About />
-      <Work />
+      <Work />  
       <Resume />
       <Contact />
       <Footer />
