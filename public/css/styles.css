@@ -4,11 +4,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-image: linear-gradient(
-      45deg,
-      rgb(30, 6, 245),
-      rgba(0, 110, 255, 0.777)
-    ); */
     color: black;
   }
 
@@ -18,46 +13,21 @@ body {
     margin: 0 auto;
     border: solid 8px antiquewhite;
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
   }
   
-  /* Work Section */
-  
-  .bg-image {
-    height: 60vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* opacity: 80%; */
+  .profile-sm {
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
   
-  #Work {
-    background-color: antiquewhite;
-    /* background-image: linear-gradient(
-      45deg,
-      rgb(0, 110, 255, 0.777),
-      rgba(30, 6, 245, 0.777)
-    ); */
-  }
   .card {
     box-shadow: 1px 1px 8px 2px #000000!important;
-    height: 17vh;
-    width: auto;  
   }
 
-.profile-sm {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-  /* Contact Section */
-  
-  /* #Contact {
-    background-color: antiquewhite;
-  } */
-  
   .social li {
     list-style-type: none;
     display: inline;
@@ -65,24 +35,9 @@ body {
   }
 
   .social li a:hover {
-    color: black;
+    color: #C20024;
   }
   
   .social li a {
     color: antiquewhite;
-  }
-  
-  /* Footer */
-  
-  #footer {
-    background-image: linear-gradient(
-      45deg,
-      rgb(30, 6, 245),
-      rgba(0, 110, 255, 0.777)
-    );
-    /* background-image: linear-gradient(
-      45deg,
-      rgba(255, 0, 0, 0.856),
-      rgba(255, 251, 0, 0.677)
-    ); */
   }

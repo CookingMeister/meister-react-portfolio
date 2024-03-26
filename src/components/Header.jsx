@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Link from './Link';
+import NavLink from './NavLink';
 import { Fade } from "react-awesome-reveal";
+// import {Outlet} from'react-router-dom';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,7 +9,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.scrollY;
-      const shouldChangeColor = scrollHeight > 30 && scrollHeight < 840;
+      const shouldChangeColor = scrollHeight > 20;
 
       setIsScrolled(shouldChangeColor);
     };
@@ -32,18 +33,20 @@ function Header() {
             padding: '20px 0',
             width: '100%',
             zIndex: '10',
-            backgroundColor: isScrolled ? '#faebd7' : 'blue',
+            backgroundColor: isScrolled ? '#faebd7' : 'rgba(194, 0, 36, 0.94)',
             transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
             paddingLeft: '1rem',
             fontWeight: '600',
           }}
           >
-        <div className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <div className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        style={{color: isScrolled ? '#faebd7' : '#C20024'}}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
-            fill="currentColor"
+            fill={isScrolled ? '#C20024' : 'antiquewhite'}
             className="bi bi-journal-code"
             viewBox="0 0 16 16"
           >
@@ -54,41 +57,43 @@ function Header() {
             <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
             <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
           </svg>
-          <span className="fs-4 head-title mx-2">
+          <span className="fs-4 head-title mx-2"
+          style={{color: isScrolled ? '#C20024' : 'antiquewhite'}}>
             Meister
           </span>
         </div>
 
         <ul className="nav nav-pills" >
-          <Fade cascade damping={0.2} triggerOnce>
-         <Link
-            href="index"
+        <Fade cascade damping={0.2} triggerOnce>
+         <NavLink
+            url="/"
             name="Home"
             isScrolled={isScrolled}
          />
-         <Link 
-            href="#About"
+         <NavLink 
+            url="/about"
             name="About"
             isScrolled={isScrolled}
          />
-         <Link 
-            href="#Portfolio"
+         <NavLink
+            url="/portfolio"
             name="Portfolio"
             isScrolled={isScrolled}
          />
-         <Link 
-            href="#Resume"
+         <NavLink
+            url="/resume"
             name="Resume"
             isScrolled={isScrolled}
          />
-         <Link 
-            href="#Contact"
+         <NavLink 
+            url="/contact"
             name="Contact"
             isScrolled={isScrolled}
          />
          </Fade>
         </ul>
       </header>
+      {/* <Outlet /> */}
     </section>
   );
 }

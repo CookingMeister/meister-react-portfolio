@@ -17,7 +17,10 @@ const WorkCard = (props) => {
 
   const cardStyle = {
     backgroundImage: `url(${props.image})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
     position: 'relative',
+    height: '19vh'
   };
 
   const overlayStyles = {
@@ -38,7 +41,7 @@ const WorkCard = (props) => {
   };
 
   return (
-    <div className="col col-xl-12">
+    <div className="col">
       <div
         className="bg-image card rounded-4 shadow-lg"
         style={cardStyle}
@@ -46,19 +49,19 @@ const WorkCard = (props) => {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
-        <Icon />
-
+        <Icon className="rounded-circle border border-white m-3 profile-sm"/>
+        {/* Overlay div */}
         <div className="rounded-4" style={overlayStyles}>
           <h3>{props.title}</h3>
           <div style={{ display: 'flex' }}>
             <a href={props.deployment} className="py-2">
-              <i className="fas fa-link fa-2x mx-3" style={{ color: 'red' }}></i>
+              <i className="fas fa-link fa-2x mx-3" style={{ color: '#C20024' }}></i>
             </a>
             <a href={props.github} className="py-2">
-              <i className="fab fa-github fa-2x mx-3" style={{ color: '' }}></i>
+              <i className="fab fa-github fa-2x mx-3"></i>
             </a>
           </div>
-          <Icon />
+          <Icon className="rounded-circle m-3 profile-sm" />
         </div>
       </div>
     </div>

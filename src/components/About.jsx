@@ -8,6 +8,7 @@ function About() {
       style = {{
       backgroundImage:
         'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
+        paddingTop: '10vh',
     }}
     >
       <div className="container">
@@ -19,12 +20,12 @@ function About() {
           </Fade>
           <div className="col-lg-6 mx-auto py-2">
             <Fade duration={4000} triggerOnce>
-              <p className="lead fw-bold text-body-emphasis mb-3">
+              <p className="lead fw-bold text-body-emphasis mt-3 pb-4">
                 Developer, Designer, Professional Chef
               </p>
             </Fade>
             <Fade direction="up" duration={1800} triggerOnce>
-              <p className="lead text-body-emphasis mb-2">
+              <p className="lead text-body-emphasis mb-2 px-3">
                 A UNB alumnus, I'm a Fredericton-based developer with a unique
                 background. After pursuing Psychology and working as a culinary
                 professional, I discovered my passion for coding. When not
@@ -33,11 +34,14 @@ function About() {
                 Fredericton, New Brunswick.
               </p>
             </Fade>
-            <img
+            <div style={{ margin: '10%' }}>
+              <img
               src="/img/profile.png"
               className="profile-pic my-5 img-fluid"
               alt="Sunny summer day profile picture of young man smiling outside."
             />
+            </div>
+          
           </div>
         </div>
       </div>
