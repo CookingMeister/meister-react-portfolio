@@ -6,6 +6,7 @@ import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
 import Footer from './Footer';
+import Error from './Error';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="resume" element={<Resume />} />
         <Route path="contact" element={<Contact />} />
-        {/* <Route path="*" element={</>} /> */}
+        <Route path="*" element={<Error/>} />
       </Routes>
       <Footer />
     </div>
