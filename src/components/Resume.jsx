@@ -4,11 +4,12 @@ export default function Resume() {
   const fontStyles = {
     fontSize: '1.2rem',
     color: 'antiquewhite',
+    textDecoration: 'none',
     li: {
       listStyleType: 'none',
       marginLeft: '-1rem',
       marginTop: '1rem',
-      textDecoration: 'none',
+      fontSize: '1.1rem',
     },
   };
 
@@ -20,7 +21,7 @@ export default function Resume() {
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
         paddingTop: '18vh',
-        paddingBottom: '8vh'
+        paddingBottom: '8vh',
       }}
     >
       <div className="container px-4">
@@ -30,12 +31,21 @@ export default function Resume() {
         <div className="row row-cols align-items-stretch g-4 py-5">
           <div className="col-lg-12 d-flex justify-content-center mx-5">
             <div className="row">
-              <a href="Resume here" style={fontStyles.li}
-              className="my-2 mb-5 pb-5">
-              <i class="fas fa-file-download mx-2"></i> Download Resume here
+              <a
+                href="Resume here"
+                style={{
+                  textDecoration: 'none',
+                  color: 'antiquewhite',
+                  fontSize: '1.2rem',
+                  width: '50%'
+                }}
+                className="my-2 mb-5 pb-5"
+              >
+                <i class="fas fa-file-download mx-2"></i>
+                Download Resume
               </a>
-              <h4 className="pb-5 pt-3">Skills</h4>
-              <div className="col-lg-3 col-sm-6" >
+              <h4 className="pb-4">Skills:</h4>
+              <div className="col-lg-3 col-sm-6">
                 <h5 style={fontStyles}>Libraries & Frameworks:</h5>
                 <ul style={fontStyles.li}>
                   <li>React</li>
@@ -64,8 +74,8 @@ export default function Resume() {
                   <li>HTML</li>
                   <li>CSS</li>
                 </ul>
-                </div>
-                <div className="col-lg-3 col-sm-6">
+              </div>
+              <div className="col-lg-3 col-sm-6">
                 <h5 style={fontStyles}>Databases:</h5>
                 <ul style={fontStyles.li}>
                   <li>MySQL</li>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NavLink from './NavLink';
 import { Fade } from "react-awesome-reveal";
-// import {Outlet} from'react-router-dom';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +33,7 @@ function Header() {
             padding: '20px 0',
             width: '100%',
             zIndex: '10',
-            backgroundColor: isScrolled ? '#faebd7' : 'rgba(194, 0, 36, 0.94)',
+            backgroundColor: isScrolled ? '#faebd7' : 'blue',
             transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
             paddingLeft: '1rem',
             fontWeight: '500',
@@ -94,7 +93,6 @@ function Header() {
          </Fade>
         </ul>
       </header>
-      {/* <Outlet /> */}
     </section>
   );
 }

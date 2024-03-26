@@ -47,13 +47,13 @@ function Contact() {
       fontFamily: 'Roboto, sans-serif',
       backgroundImage:
       'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-      paddingTop: '14vh',
+      paddingTop: '15vh',
       paddingBottom: '8vh',
       color: 'antiquewhite',
       borderRadius: '2px',
     }}
     >
-      <div className="container px-4 py-5">
+      <div className="container px-4 py-4">
         <h3 className="fs-2" style={{marginTop: '1vh', marginBottom: '10vh'}}>Contact Me</h3>
         <Fade duration={1900} triggerOnce>
         <form
