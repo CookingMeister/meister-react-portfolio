@@ -4,9 +4,10 @@ import { Fade, Zoom } from 'react-awesome-reveal';
 
 function Portfolio() {
   const styles = {
+    fontFamily: 'Roboto, sans-serif',
     backgroundImage:
       'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-    paddingTop: '18vh',
+    paddingTop: '19vh',
     paddingBottom: '14vh',
   };
 
@@ -26,18 +27,18 @@ function Portfolio() {
             </Fade>
             <Fade duration={2800} triggerOnce>
               <WorkCard
-                title="Christmas Movie Generator"
-                github="https://github.com/CookingMeister/christmas-movie-generator"
-                deployment="https://samgreenwood84.github.io/christmas-movie-generator/"
-                image="/img/XmasMockup.png"
-              />
-            </Fade>
-            <Fade duration={3000} triggerOnce>
-              <WorkCard
                 title="Tech Blog"
                 github="https://github.com/CookingMeister/tech-blog-sequelize"
                 deployment="https://infinite-ocean-68541-91b9dc3361ab.herokuapp.com/"
                 image="/img/blog.png"
+              />
+            </Fade>
+            <Fade duration={3000} triggerOnce>
+              <WorkCard
+                title="Christmas Movie Generator"
+                github="https://github.com/CookingMeister/christmas-movie-generator"
+                deployment="https://samgreenwood84.github.io/christmas-movie-generator/"
+                image="/img/XmasMockup.png"
               />
             </Fade>
             <Fade duration={3500} triggerOnce>

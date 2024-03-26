@@ -25,6 +25,7 @@ function Header() {
     <section id="Heading">
       <header
           style={{
+            fontFamily: 'Roboto, sans-serif',
             position: 'fixed',
             display: 'flex',
             flexWrap: 'wrap',
@@ -36,7 +37,7 @@ function Header() {
             backgroundColor: isScrolled ? '#faebd7' : 'rgba(194, 0, 36, 0.94)',
             transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
             paddingLeft: '1rem',
-            fontWeight: '600',
+            fontWeight: '500',
           }}
           >
         <div className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"

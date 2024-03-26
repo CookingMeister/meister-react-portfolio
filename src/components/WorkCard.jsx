@@ -16,6 +16,7 @@ const WorkCard = (props) => {
   };
 
   const cardStyle = {
+    fontFamily: 'Roboto, sans-serif',
     backgroundImage: `url(${props.image})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -34,7 +35,6 @@ const WorkCard = (props) => {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    color: 'black',
     padding: '1rem',
     transition: 'display 0.3s ease',
     textDecoration: 'none',
@@ -50,6 +50,7 @@ const WorkCard = (props) => {
         onMouseOut={handleMouseOut}
       >
         <Icon className="rounded-circle border border-white m-3 profile-sm"/>
+
         {/* Overlay div */}
         <div className="rounded-4" style={overlayStyles}>
           <h3>{props.title}</h3>
@@ -63,6 +64,8 @@ const WorkCard = (props) => {
           </div>
           <Icon className="rounded-circle m-3 profile-sm" />
         </div>
+        {/* End of Overlay */}
+
       </div>
     </div>
   );

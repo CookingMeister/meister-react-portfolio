@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Fade} from'react-awesome-reveal';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -43,11 +44,18 @@ function Contact() {
 
     <section id="Contact"
     style = {{
-      backgroundColor: 'antiquewhite'      
+      fontFamily: 'Roboto, sans-serif',
+      backgroundImage:
+      'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
+      paddingTop: '14vh',
+      paddingBottom: '8vh',
+      color: 'antiquewhite',
+      borderRadius: '2px',
     }}
     >
       <div className="container px-4 py-5">
-        <h3 className="fs-2 pb-1 mb-5">Contact Me</h3>
+        <h3 className="fs-2" style={{marginTop: '1vh', marginBottom: '10vh'}}>Contact Me</h3>
+        <Fade duration={1900} triggerOnce>
         <form
           className="row gy-2 gx-4 align-items-center justify-content-center mx-auto w-100 d-block"
           onSubmit={handleSubmit}
@@ -57,6 +65,7 @@ function Contact() {
               Name
             </label>
             <input
+              style={{borderRadius: '3px', backgroundColor: 'antiquewhite'}}
               type="text"
               className="form-control"
               id="name"
@@ -70,6 +79,7 @@ function Contact() {
               Email address
             </label>
             <input
+              style={{borderRadius: '3px', backgroundColor: 'antiquewhite'}}
               type="email"
               className="form-control"
               id="email"
@@ -77,13 +87,14 @@ function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {emailError && <p className="text-danger text-center mt-2">{emailError}</p>}
+            {emailError && <p className="text-danger text-center mt-3">{emailError}</p>}
           </div>
           <div className="col-md-12 col-lg-6 mx-auto pb-1">
             <label htmlFor="message" className="form-label mx-1">
               Message
             </label>
             <textarea
+            style={{borderRadius: '3px', backgroundColor: 'antiquewhite'}}
               className="form-control"
               id="message"
               rows="5"
@@ -91,12 +102,13 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            {messageError && <p className="text-danger text-center mt-2">{messageError}</p>}
+            {messageError && <p className="text-danger text-center mt-3">{messageError}</p>}
             <button type="submit" className="btn btn-dark mt-2" style={{width: '25%'}}>
               Submit
             </button>
           </div>
         </form>
+        </Fade>
       </div>
     </section>
   );

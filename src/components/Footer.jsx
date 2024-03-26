@@ -7,6 +7,7 @@ function Footer() {
   return (
     <section id="footer"
     style= {{
+      fontFamily: 'Roboto, sans-serif',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

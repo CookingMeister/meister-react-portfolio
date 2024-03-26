@@ -6,8 +6,9 @@ function About() {
     <section
       id="About"
       style = {{
-      backgroundImage:
-        'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
+        fontFamily: 'Roboto, sans-serif',
+        backgroundImage:
+          'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
         paddingTop: '10vh',
     }}
     >
