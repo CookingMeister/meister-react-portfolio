@@ -30,7 +30,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-          <span>&copy; { getDate() } Herr Meister</span>
+          <span>&copy; { getDate() } Meister</span>
           <p>Fredericton | New Bunswick | Canada</p>
         </footer>
       </div>
