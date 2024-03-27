@@ -30,16 +30,11 @@ body {
   }
 
   /* Footer socials */
-  .social li {
-    list-style-type: none;
-    display: inline;
-    padding-right: 1rem;
-  }
-
-  .social li a:hover {
+  .social i:hover {
     color: #C20024;
   }
-  
-  .social li a {
+
+  .social i {
+    font-size: 1.2rem;
     color: antiquewhite;
   }

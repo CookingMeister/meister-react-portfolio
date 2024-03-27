@@ -16,7 +16,7 @@ function NavLink(props) {
     color: 'antiquewhite',
     fontSize: '1rem',
     marginRight: '.5rem',
-    height: '2.3rem'
+    height: '2.4rem'
   };
   const location = useLocation();
 

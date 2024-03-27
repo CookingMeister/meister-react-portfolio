@@ -20,27 +20,22 @@ function Footer() {
         textAlign: 'center',
         height: '18vh',
         backgroundColor: 'rgb(30, 6, 245)',
-        padding: '18vh',
+        padding: '17vh',
+        fontSize: '80%',
       }}
     >
-      <div className="container footer">
+      <div className="container footer text-muted">
         <footer>
-          <div className="social">
-            <ul>
-              <li>
-                <a href="https://github.com/CookingMeister?tab=repositories">
-                  <i class="fab fa-github fa-2x p-2"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/shawn-meister-bb646b29a/">
-                  <i class="fab fa-linkedin fa-2x p-2"></i>
-                </a>
-              </li>
-            </ul>
+          <div className="social d-flex justify-content-center align-items-center">
+            <a href="https://github.com/CookingMeister?tab=repositories">
+              <i class="fab fa-github px-3 py-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shawn-meister-bb646b29a/">
+              <i class="fab fa-linkedin px-3 py-4"></i>
+            </a>
           </div>
           <span>&copy; {getDate()} Meister</span>
-          <p>Fredericton | New Bunswick | Canada</p>
+          <p>Fredericton</p>
         </footer>
       </div>
     </section>

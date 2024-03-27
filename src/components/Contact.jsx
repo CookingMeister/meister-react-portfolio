@@ -104,7 +104,7 @@ function Contact() {
               {/* Display email error if there is one  */}
               {emailError && (
                 <p
-                  style={{ textShadow: '1px 1px 3px black', color: 'hotpink' }}
+                style={{ textShadow: '1px 1px 2px black', color: 'red', letterSpacing: '1px' }}
                   className="text-center mt-3"
                 >
                   <em>
@@ -129,7 +129,7 @@ function Contact() {
               {/* Display message error if there is one  */}
               {messageError && (
                 <p
-                  style={{ textShadow: '1px 1px 3px black', color: 'hotpink' }}
+                  style={{ textShadow: '1px 1px 2px black', color: 'red', letterSpacing: '1px' }}
                   className="text-center mt-3"
                 >
                   <em>

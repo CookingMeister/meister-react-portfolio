@@ -43,8 +43,8 @@ export default function Resume() {
           Resume
         </h2>
         <Fade duration={2100} triggerOnce>
-          <div className="row row-cols align-items-stretch g-4 py-5 mb-5">
-            <div className="col-lg-12 d-flex justify-content-center mx-5">
+          <div className="row row-cols align-items-stretch g-4 p-5 mb-3">
+            <div className="col-lg-12 d-flex justify-content-center mx-lg-5 mx-2">
               <div className="row">
                 <a
                   href="Resume_here"
@@ -53,7 +53,8 @@ export default function Resume() {
                     color: '#C20024',
                     textShadow: '1px 1px 3px black',
                     fontSize: '1.2rem',
-                    marginLeft: '-1.5vw',
+                    marginLeft: '28%',
+                    width: '40%',
                   }}
                   className="my-2 mb-5 pb-5 text-center"
                 >

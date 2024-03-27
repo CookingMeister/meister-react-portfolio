@@ -26,7 +26,7 @@ function Header() {
   }, []);
 
   return (
-    <section id="Heading">
+    <section id="Heading" className=''>
       <header
         style={{
           fontFamily: 'Roboto, sans-serif',
@@ -35,7 +35,7 @@ function Header() {
           flexWrap: 'wrap',
           justifyContent: 'center',
           top: '0',
-          padding: '20px 0',
+          padding: '20px 0px',
           width: '100%',
           zIndex: '10',
           backgroundColor: isScrolled ? '#faebd7' : 'blue',
@@ -54,7 +54,7 @@ function Header() {
             width="40"
             height="40"
             fill={isScrolled ? '#C20024' : 'antiquewhite'}
-            className="bi bi-journal-code"
+            className="bi bi-journal-code ml-1"
             viewBox="0 0 16 16"
           >
             <path
