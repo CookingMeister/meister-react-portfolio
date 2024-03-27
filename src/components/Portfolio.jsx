@@ -14,7 +14,9 @@ function Portfolio() {
   return (
     <section id="Work" style={styles}>
       <div className="container px-4">
-        <h2 className="fs-2 pb-5">Portfolio</h2>
+        <h2 className="fs-2 pb-5" style={{textShadow: '1px 1px 3px black', color: 'antiquewhite'}}>
+          Portfolio
+        </h2>
         <div className="row row-cols-sm-1 row-cols-lg-2 row-cols-xxl-3 align-items-stretch g-5 py-5">
           <Zoom cascade damping={0.28} triggerOnce>
             <Fade duration={2500} triggerOnce>

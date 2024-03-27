@@ -47,14 +47,16 @@ function Contact() {
       fontFamily: 'Roboto, sans-serif',
       backgroundImage:
       'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-      paddingTop: '15vh',
+      paddingTop: '18vh',
       paddingBottom: '8vh',
       color: 'antiquewhite',
       borderRadius: '2px',
     }}
     >
-      <div className="container px-4 py-4">
-        <h3 className="fs-2" style={{marginTop: '1vh', marginBottom: '10vh'}}>Contact Me</h3>
+      <div className="container px-4">
+        <h3 className="fs-2" style={{marginTop: '1vh', marginBottom: '10vh', textShadow: '1px 1px 3px black'}}>
+          Contact Me
+        </h3>
         <Fade duration={1900} triggerOnce>
         <form
           className="row gy-2 gx-4 align-items-center justify-content-center mx-auto w-100 d-block"
@@ -87,10 +89,10 @@ function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {emailError && <p className="text-danger text-center mt-3">{emailError}</p>}
+            {emailError && <p style={{textShadow: '1px 1px 3px black'}} className="text-danger text-center mt-3">{emailError}</p>}
           </div>
           <div className="col-md-12 col-lg-6 mx-auto pb-1">
-            <label htmlFor="message" className="form-label mx-1">
+            <label htmlFor="message" className="form-label mx-1" >
               Message
             </label>
             <textarea
@@ -102,7 +104,7 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            {messageError && <p className="text-danger text-center mt-3">{messageError}</p>}
+            {messageError && <p style={{textShadow: '1px 1px 3px black'}} className="text-danger text-center mt-3">{messageError}</p>}
             <button type="submit" className="btn btn-dark mt-2" style={{width: '25%'}}>
               Submit
             </button>

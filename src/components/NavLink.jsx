@@ -5,13 +5,13 @@ function NavLink(props) {
 
   const linkStyle = {
     color: props.isScrolled ? 'blue' : 'antiquewhite',
-    marginRight: '1rem',
+    marginRight: '.5rem',
   };
 
   const activeStyle = {
     color: 'antiquewhite',
     fontSize: '1rem',
-    marginRight: '1rem',
+    marginRight: '.5rem',
     height: '2.5rem',
   };
   const location = useLocation();
