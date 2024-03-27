@@ -14,7 +14,6 @@ export default function Resume() {
     li: {
       marginLeft: '-0.5rem',
       marginTop: '1rem',
-      fontSize: '1.1rem',
       color: 'antiquewhite',
       textShadow: '1px 1px 3px black',
     },
@@ -27,7 +26,7 @@ export default function Resume() {
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-        paddingTop: '18vh',
+        paddingTop: '20vh',
         paddingBottom: '8vh',
       }}
     >

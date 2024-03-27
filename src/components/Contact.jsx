@@ -51,7 +51,7 @@ function Contact() {
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-        paddingTop: '18vh',
+        paddingTop: '20vh',
         paddingBottom: '8vh',
         color: 'antiquewhite',
         borderRadius: '2px',
@@ -104,10 +104,12 @@ function Contact() {
               {/* Display email error if there is one  */}
               {emailError && (
                 <p
-                  style={{ textShadow: '1px 1px 3px black' }}
-                  className="text-danger text-center mt-3"
+                  style={{ textShadow: '1px 1px 3px black', color: 'hotpink' }}
+                  className="text-center mt-3"
                 >
-                  {emailError}
+                  <em>
+                    {emailError}
+                  </em>
                 </p>
               )}
             </div>
@@ -127,16 +129,18 @@ function Contact() {
               {/* Display message error if there is one  */}
               {messageError && (
                 <p
-                  style={{ textShadow: '1px 1px 3px black' }}
-                  className="text-danger text-center mt-3"
+                  style={{ textShadow: '1px 1px 3px black', color: 'hotpink' }}
+                  className="text-center mt-3"
                 >
-                  {messageError}
+                  <em>
+                    {messageError}
+                  </em>
                 </p>
               )}
               <button
                 type="submit"
                 className="btn btn-dark mt-2"
-                style={{ width: '25%' }}
+                style={{ width: '25%', border: '1px solid antiquewhite', borderRadius: '4px' }}
               >
                 Submit
               </button>

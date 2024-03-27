@@ -18,9 +18,9 @@ function Footer() {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        height: '15vh',
+        height: '18vh',
         backgroundColor: 'rgb(30, 6, 245)',
-        padding: '10vh',
+        padding: '18vh',
       }}
     >
       <div className="container footer">
@@ -29,12 +29,12 @@ function Footer() {
             <ul>
               <li>
                 <a href="https://github.com/CookingMeister?tab=repositories">
-                  <i class="fab fa-github fa-2x m-1 mb-3"></i>
+                  <i class="fab fa-github fa-2x p-2"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/shawn-meister-bb646b29a/">
-                  <i class="fab fa-linkedin fa-2x m-1 mb-3"></i>
+                  <i class="fab fa-linkedin fa-2x p-2"></i>
                 </a>
               </li>
             </ul>

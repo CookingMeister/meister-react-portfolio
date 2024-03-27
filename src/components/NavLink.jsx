@@ -16,7 +16,7 @@ function NavLink(props) {
     color: 'antiquewhite',
     fontSize: '1rem',
     marginRight: '.5rem',
-    height: '2.5rem',
+    height: '2.3rem'
   };
   const location = useLocation();
 
@@ -27,7 +27,7 @@ function NavLink(props) {
       <Link
         to={props.url}
         style={isActive ? activeStyle : linkStyle}
-        className={`nav-link ${isActive ? 'active' : ''}`}
+        className={` mt-1 nav-link ${isActive ? 'active' : ''}`}
       >
         {props.name}
       </Link>

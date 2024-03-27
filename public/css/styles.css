@@ -13,8 +13,8 @@ body {
     margin: 0 auto;
     border: solid 8px antiquewhite;
     border-radius: 50%;
-    width: 360px;
-    height: 360px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
   }
   

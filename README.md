@@ -9,6 +9,8 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies](#technologies)
+- [Screenshot](#screenshot)
+- [Link](#link)
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [Questions](#questions)
@@ -65,7 +67,7 @@ This is a portfolio website built using React.js to showcase my web development 
 - JavaScript
 - Bootstrap
 
-## Mock up
+## Screenshot
 
 The following image shows the web application's appearance and functionality:
 ![blue screen, bio blurb with profile picture](public/img/Port.png)

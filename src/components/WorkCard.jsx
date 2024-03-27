@@ -26,6 +26,8 @@ const WorkCard = (props) => {
     backgroundRepeat: 'no-repeat',
     position: 'relative',
     height: '19vh',
+    width: '90%',
+    margin: '0 auto',
   };
 
   const overlayStyles = {
@@ -53,7 +55,7 @@ const WorkCard = (props) => {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
-        <Icon className="rounded-circle border border-white m-3 profile-sm" />
+        <Icon className="rounded-circle border border-white m-2 profile-sm" />
 
         {/* Overlay div */}
         <div className="rounded-4" style={overlayStyles}>
@@ -69,7 +71,7 @@ const WorkCard = (props) => {
               <i className="fab fa-github fa-2x mx-3"></i>
             </a>
           </div>
-          <Icon className="rounded-circle m-3 profile-sm" />
+          <Icon className="rounded-circle m-2 profile-sm" />
         </div>
         {/* End of Overlay */}
       </div>

@@ -15,7 +15,7 @@ function About() {
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-        paddingTop: '10vh',
+        paddingTop: '7vh',
       }}
     >
       <div className="container">
@@ -33,7 +33,7 @@ function About() {
               </p>
             </Fade>
             <Fade direction="up" duration={1800} triggerOnce>
-              <p className="lead text-body-emphasis mb-2 px-3">
+              <p className="text-body-emphasis mb-2 px-3">
                 A UNB alumnus, I'm a Fredericton-based developer with a unique
                 background. After pursuing Psychology and working as a culinary
                 professional, I discovered my passion for coding. When not

@@ -46,7 +46,7 @@ function Header() {
         }}
       >
         <div
-          className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          className="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           style={{ color: isScrolled ? '#faebd7' : '#C20024' }}
         >
           <svg

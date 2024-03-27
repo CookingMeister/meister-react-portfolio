@@ -10,8 +10,8 @@ function Icon(props) {
     <img
       src="/img/profile.png"
       alt="Sunny outdoors profile by the water"
-      width="32"
-      height="32"
+      width="30"
+      height="30"
       className={props.className}
     />
   );
