@@ -31,7 +31,7 @@ This is a portfolio website built using React.js to showcase my web development 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/meister-react-portfolio.git
+   git clone https://github.com/CookingMeister/meister-react-portfolio.git
    ```
 
 2. Navigate to the project directory:
