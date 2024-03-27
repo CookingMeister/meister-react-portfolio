@@ -65,6 +65,15 @@ This is a portfolio website built using React.js to showcase my web development 
 - JavaScript
 - Bootstrap
 
+## Mock up
+
+The following image shows the web application's appearance and functionality:
+![blue screen, bio blurb with profile picture](public/img/Port.png)
+
+## Link
+
+A link to the deployed site can be found [here](https://main--warm-yeot-1ec485.netlify.app/).
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
