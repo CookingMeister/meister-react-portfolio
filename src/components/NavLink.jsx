@@ -9,13 +9,13 @@ import { Link, useLocation } from 'react-router-dom';
 function NavLink(props) {
   const linkStyle = {
     color: props.isScrolled ? 'blue' : 'antiquewhite',
-    marginRight: '.5rem',
+    // marginRight: '.5rem',
   };
 
   const activeStyle = {
     color: 'antiquewhite',
     fontSize: '1rem',
-    marginRight: '.5rem',
+    marginRight: '.4rem',
     height: '2.4rem'
   };
   const location = useLocation();
@@ -27,7 +27,7 @@ function NavLink(props) {
       <Link
         to={props.url}
         style={isActive ? activeStyle : linkStyle}
-        className={` mt-1 nav-link ${isActive ? 'active' : ''}`}
+        className={`mt-1 nav-link ${isActive ? 'active' : ''}`}
       >
         {props.name}
       </Link>

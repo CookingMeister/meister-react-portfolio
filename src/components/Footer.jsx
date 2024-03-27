@@ -18,9 +18,9 @@ function Footer() {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        height: '18vh',
+        height: '16vh',
         backgroundColor: 'rgb(30, 6, 245)',
-        padding: '17vh',
+        padding: '18vh',
         fontSize: '80%',
       }}
     >

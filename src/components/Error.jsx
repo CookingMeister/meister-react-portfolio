@@ -14,7 +14,7 @@ function Error() {
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
         height: '90vh',
-        paddingTop: '22vh',
+        paddingTop: '30vh',
         color: 'antiquewhite',
       }}
     >
