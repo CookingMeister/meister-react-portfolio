@@ -1,19 +1,26 @@
+/**
+ * Renders the About component.
+ *
+ * Displays biographical information and profile picture about the developer.
+ * Uses React Animations library to fade in text and image on load.
+ */
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 
 function About() {
-   return (
+  return (
     <section
       id="About"
-      style = {{
+      style={{
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
         paddingTop: '10vh',
-    }}
+      }}
     >
       <div className="container">
         <div className="px-2 pt-5 mt-5 text-center">
+          {/* Fade Animations */}
           <Fade duration={1600} direction="down" triggerOnce>
             <h1 className="display-4 fw-bold text-body-emphasis pt-5">
               I am Shawn Meister
@@ -37,12 +44,11 @@ function About() {
             </Fade>
             <div style={{ margin: '10%' }}>
               <img
-              src="/img/profile.png"
-              className="profile-pic my-5 img-fluid"
-              alt="Sunny summer day profile picture of young man smiling outside."
-            />
+                src="/img/profile.png"
+                className="profile-pic my-5 img-fluid"
+                alt="Sunny summer day profile picture of young man smiling outside."
+              />
             </div>
-          
           </div>
         </div>
       </div>

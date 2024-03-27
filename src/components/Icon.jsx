@@ -1,14 +1,19 @@
-import React from "react";
+/**
+ * Renders an image icon component.
+ *
+ * Accepts a `className` props.
+ */
+import React from 'react';
 
 function Icon(props) {
-  return (    
-      <img
-          src="/img/profile.png"
-          alt="Sunny outdoors profile by the water"
-          width="32"
-          height="32"
-          className={props.className}
-        />
+  return (
+    <img
+      src="/img/profile.png"
+      alt="Sunny outdoors profile by the water"
+      width="32"
+      height="32"
+      className={props.className}
+    />
   );
 }
 

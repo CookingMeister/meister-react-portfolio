@@ -23,11 +23,13 @@ body {
     left: 0;
     bottom: 0;
   }
-  
+
+  /* Portfolio Section */
   .card {
     box-shadow: 1px 1px 8px 2px #000000!important;
   }
 
+  /* Footer socials */
   .social li {
     list-style-type: none;
     display: inline;

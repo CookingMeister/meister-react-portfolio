@@ -1,3 +1,7 @@
+/**
+ * Renders a card for displaying project work. Handles hover interactions to
+ * show/hide an overlay with additional details.
+ */
 import React, { useState } from 'react';
 import Icon from './Icon';
 
@@ -21,7 +25,7 @@ const WorkCard = (props) => {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     position: 'relative',
-    height: '19vh'
+    height: '19vh',
   };
 
   const overlayStyles = {
@@ -49,14 +53,17 @@ const WorkCard = (props) => {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
-        <Icon className="rounded-circle border border-white m-3 profile-sm"/>
+        <Icon className="rounded-circle border border-white m-3 profile-sm" />
 
         {/* Overlay div */}
         <div className="rounded-4" style={overlayStyles}>
           <h3>{props.title}</h3>
           <div style={{ display: 'flex' }}>
             <a href={props.deployment} className="py-2">
-              <i className="fas fa-link fa-2x mx-3" style={{ color: '#C20024' }}></i>
+              <i
+                className="fas fa-link fa-2x mx-3"
+                style={{ color: '#C20024' }}
+              ></i>
             </a>
             <a href={props.github} className="py-2">
               <i className="fab fa-github fa-2x mx-3"></i>
@@ -65,7 +72,6 @@ const WorkCard = (props) => {
           <Icon className="rounded-circle m-3 profile-sm" />
         </div>
         {/* End of Overlay */}
-
       </div>
     </div>
   );

@@ -1,3 +1,7 @@
+/**
+ * Main App component that renders the header, footer and routes between pages.
+ * Routes to the About, Portfolio, Resume, Contact and Error pages.
+ */
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
@@ -18,7 +22,7 @@ function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="resume" element={<Resume />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<Error/>} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </div>

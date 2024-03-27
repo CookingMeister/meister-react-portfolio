@@ -1,6 +1,11 @@
+/**
+ * Header component that renders the navigation bar.
+ *
+ * Handles scrolling state to change header styling and manages navigation links.
+ */
 import React, { useState, useEffect } from 'react';
 import NavLink from './NavLink';
-import { Fade } from "react-awesome-reveal";
+import { Fade } from 'react-awesome-reveal';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,24 +28,26 @@ function Header() {
   return (
     <section id="Heading">
       <header
-          style={{
-            fontFamily: 'Roboto, sans-serif',
-            position: 'fixed',
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent:'center',
-            top: '0',
-            padding: '20px 0',
-            width: '100%',
-            zIndex: '10',
-            backgroundColor: isScrolled ? '#faebd7' : 'blue',
-            transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
-            paddingLeft: '1rem',
-            fontWeight: '500',
-          }}
-          >
-        <div className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        style={{color: isScrolled ? '#faebd7' : '#C20024'}}
+        style={{
+          fontFamily: 'Roboto, sans-serif',
+          position: 'fixed',
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          top: '0',
+          padding: '20px 0',
+          width: '100%',
+          zIndex: '10',
+          backgroundColor: isScrolled ? '#faebd7' : 'blue',
+          transition:
+            'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
+          paddingLeft: '1rem',
+          fontWeight: '500',
+        }}
+      >
+        <div
+          className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          style={{ color: isScrolled ? '#faebd7' : '#C20024' }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,40 +64,23 @@ function Header() {
             <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
             <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
           </svg>
-          <span className="fs-4 head-title mx-2"
-          style={{color: isScrolled ? '#C20024' : 'antiquewhite'}}>
+          <span
+            className="fs-4 head-title mx-2"
+            style={{ color: isScrolled ? '#C20024' : 'antiquewhite' }}
+          >
             Meister
           </span>
         </div>
 
-        <ul className="nav nav-pills" >
-        <Fade cascade damping={0.2} triggerOnce>
-         <NavLink
-            url="/"
-            name="Home"
-            isScrolled={isScrolled}
-         />
-         <NavLink 
-            url="/about"
-            name="About"
-            isScrolled={isScrolled}
-         />
-         <NavLink
-            url="/portfolio"
-            name="Portfolio"
-            isScrolled={isScrolled}
-         />
-         <NavLink
-            url="/resume"
-            name="Resume"
-            isScrolled={isScrolled}
-         />
-         <NavLink 
-            url="/contact"
-            name="Contact"
-            isScrolled={isScrolled}
-         />
-         </Fade>
+        <ul className="nav nav-pills">
+          {/* Cascading Nav Links Animation */}
+          <Fade cascade damping={0.2} triggerOnce>
+            <NavLink url="/" name="Home" isScrolled={isScrolled} />
+            <NavLink url="/about" name="About" isScrolled={isScrolled} />
+            <NavLink url="/portfolio" name="Portfolio" isScrolled={isScrolled} />
+            <NavLink url="/resume" name="Resume" isScrolled={isScrolled} />
+            <NavLink url="/contact" name="Contact" isScrolled={isScrolled} />
+          </Fade>
         </ul>
       </header>
     </section>
