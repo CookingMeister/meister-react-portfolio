@@ -11,7 +11,7 @@ function Portfolio() {
     fontFamily: 'Roboto, sans-serif',
     backgroundImage:
       'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-    paddingTop: '21vh',
+    paddingTop: '28vh',
     paddingBottom: '14vh',
   };
 
@@ -26,7 +26,7 @@ function Portfolio() {
         </h2>
         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-xl-3 align-items-stretch g-5 py-5">
           {/* Zoom and Fade Animations */}
-          <Zoom cascade damping={0.25} triggerOnce>
+          <Zoom cascade damping={0.2} triggerOnce>
             <Fade duration={2500} triggerOnce>
               <WorkCard
                 title="SimplyFit App"
@@ -54,7 +54,7 @@ function Portfolio() {
                 alt="Christmas Movie Generator with user input to generate a random movie"
               />
             </Fade>
-            <Fade duration={3500} triggerOnce>
+            <Fade duration={3400} triggerOnce>
               <WorkCard
                 title="Weather Dashboard"
                 github="https://github.com/CookingMeister/weather-dashboard"
@@ -63,7 +63,7 @@ function Portfolio() {
                 alt="Weather dashboard with search bar to find current weather and a 5-day forecast"
               />
             </Fade>
-            <Fade duration={4000} triggerOnce>
+            <Fade duration={3800} triggerOnce>
               <WorkCard
                 title="Note Taker"
                 github="https://github.com/CookingMeister/note-taker-express"
@@ -72,7 +72,7 @@ function Portfolio() {
                 alt="Note Taker with add, edit and delete notes functionality"
               />
             </Fade>
-            <Fade duration={4500} triggerOnce>
+            <Fade duration={4000} triggerOnce>
               <WorkCard
                 github="https://github.com/CookingMeister/timedQuiz-JS-04"
                 title="JS Quiz"

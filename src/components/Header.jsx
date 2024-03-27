@@ -75,8 +75,7 @@ function Header() {
         <ul className="nav nav-pills">
           {/* Cascading Nav Links Animation */}
           <Fade cascade damping={0.2} triggerOnce>
-            <NavLink url="/" name="Home" isScrolled={isScrolled} />
-            <NavLink url="/about" name="About" isScrolled={isScrolled} />
+            <NavLink url="/" name="About" isScrolled={isScrolled} />
             <NavLink url="/portfolio" name="Portfolio" isScrolled={isScrolled} />
             <NavLink url="/resume" name="Resume" isScrolled={isScrolled} />
             <NavLink url="/contact" name="Contact" isScrolled={isScrolled} />

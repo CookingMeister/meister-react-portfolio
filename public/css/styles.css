@@ -11,10 +11,10 @@ body {
   
   .profile-pic {
     margin: 0 auto;
-    border: solid 8px antiquewhite;
+    border: solid 6px antiquewhite;
     border-radius: 50%;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
   }
   

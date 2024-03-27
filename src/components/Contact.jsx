@@ -51,7 +51,7 @@ function Contact() {
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-        paddingTop: '20vh',
+        paddingTop: '27vh',
         paddingBottom: '8vh',
         color: 'antiquewhite',
         borderRadius: '2px',
@@ -104,7 +104,7 @@ function Contact() {
               {/* Display email error if there is one  */}
               {emailError && (
                 <p
-                style={{ textShadow: '1px 1px 2px black', color: 'red', letterSpacing: '1px' }}
+                style={{ textShadow: '1px 1px 2px black', color: '#15f5ba', letterSpacing: '1px' }}
                   className="text-center mt-3"
                 >
                   <em>
@@ -129,7 +129,7 @@ function Contact() {
               {/* Display message error if there is one  */}
               {messageError && (
                 <p
-                  style={{ textShadow: '1px 1px 2px black', color: 'red', letterSpacing: '1px' }}
+                  style={{ textShadow: '1px 1px 2px black', color: '#15f5ba', letterSpacing: '1px' }}
                   className="text-center mt-3"
                 >
                   <em>
