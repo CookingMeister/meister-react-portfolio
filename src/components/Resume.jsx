@@ -4,6 +4,7 @@
  */
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
+import DownloadLink from './DownloadLink';
 
 export default function Resume() {
   const fontStyles = {
@@ -46,21 +47,7 @@ export default function Resume() {
           <div className="row row-cols align-items-stretch g-4 p-5 mb-3">
             <div className="col-lg-12 d-flex justify-content-center mx-lg-5 mx-2">
               <div className="row">
-                <a
-                  href="Resume_here"
-                  style={{
-                    textDecoration: 'none',
-                    color: '#C20024',
-                    textShadow: '1px 1px 3px black',
-                    fontSize: '1.2rem',
-                    marginLeft: '28%',
-                    width: '40%',
-                  }}
-                  className="my-2 mb-5 pb-5 text-center"
-                >
-                  <i class="fas fa-file-download mx-2"></i>
-                  Download Resume
-                </a>
+                <DownloadLink />
                 <h4
                   className="pb-4"
                   style={{
