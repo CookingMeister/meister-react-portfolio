@@ -5,6 +5,7 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import DownloadLink from './DownloadLink';
+import SkillList from './SkillList';
 
 export default function Resume() {
   const fontStyles = {
@@ -19,6 +20,40 @@ export default function Resume() {
       textShadow: '1px 1px 3px black',
     },
   };
+
+  const skillCategories = [
+    {
+      title: 'Libraries & Frameworks',
+      skills: [
+        'React',
+        'React-Router',
+        'Node',
+        'Express',
+        'Apollo Server',
+        'Bootstrap',
+      ],
+    },
+    {
+      title: 'Tools & Platforms',
+      skills: [
+        'Git',
+        'GitHub',
+        'Netlify',
+        'Render',
+        'Heroku',
+        'Webpack',
+        'Vite',
+      ],
+    },
+    {
+      title: 'Languages',
+      skills: ['JavaScript (ES6+)', 'HTML', 'CSS'],
+    },
+    {
+      title: 'Databases',
+      skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'GraphQL'],
+    },
+  ];
 
   return (
     <section
@@ -58,45 +93,14 @@ export default function Resume() {
                 >
                   Skills:
                 </h4>
-                <div className="col-lg-3 col-sm-6 g-4 px-2">
-                  <h5 style={fontStyles}>Libraries & Frameworks:</h5>
-                  <ul style={fontStyles.li}>
-                    <li>React</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>Apollo Server</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                </div>
-                <div className="col-lg-3 col-sm-6 g-4 px-2">
-                  <h5 style={fontStyles}>Tools & Platforms:</h5>
-                  <ul style={fontStyles.li}>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Netlify</li>
-                    <li>Render</li>
-                    <li>Heroku</li>
-                    <li>Webpack</li>
-                    <li>Vite</li>
-                  </ul>
-                </div>
-                <div className="col-lg-3 col-sm-6 g-4 px-2">
-                  <h5 style={fontStyles}>Languages:</h5>
-                  <ul style={fontStyles.li}>
-                    <li>JavaScript (ES6+)</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                </div>
-                <div className="col-lg-3 col-sm-6 g-4 px-2">
-                  <h5 style={fontStyles}>Databases:</h5>
-                  <ul style={fontStyles.li}>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>PostgreSQL</li>
-                    <li>GraphQL</li>
-                  </ul>
-                </div>
+                {skillCategories.map((category, index) => (
+                  <SkillList
+                    key={index}
+                    title={category.title}
+                    skills={category.skills}
+                    fontStyles={fontStyles}
+                  />
+                ))}
               </div>
             </div>
           </div>
