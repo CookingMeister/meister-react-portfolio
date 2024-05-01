@@ -3,7 +3,7 @@ import React from 'react';
 const DownloadLink = () => {
   return (    
       <a
-        href="/resume.png"
+        href="/Resume_Apr2024.docx"
         download
         style={{
           textDecoration: 'none',

@@ -27,11 +27,22 @@ function Portfolio() {
         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-xl-3 align-items-stretch g-5 py-5">
           {/* Zoom and Fade Animations */}
           <Zoom cascade damping={0.2} triggerOnce>
+          <Fade duration={2500} triggerOnce>
+              <WorkCard
+                title="Music Festival Wear"
+                github="https://github.com/CookingMeister/music-festival-hub"
+                deployment="https://music-festival-hub.onrender.com/"
+                description="MERN stack e-commerce app"
+                image="/img/festival.png"
+                alt="e-commerce landing page with logo and best-sellers carousel"
+              />
+            </Fade>
             <Fade duration={2500} triggerOnce>
               <WorkCard
                 title="SimplyFit App"
                 github="https://github.com/CookingMeister/fitness-tracker-mvc"
                 deployment="https://ancient-dusk-75744-6e17b3d6732e.herokuapp.com/"
+                description="MVC REST API fitness app"
                 image="/img/dashboard.png"
                 alt="Exercise dashboard with sections for user to add, update, and delete workouts"
               />
@@ -41,6 +52,7 @@ function Portfolio() {
                 title="Tech Blog"
                 github="https://github.com/CookingMeister/tech-blog-sequelize"
                 deployment="https://infinite-ocean-68541-91b9dc3361ab.herokuapp.com/"
+                description="90s themed MVC tech blog"
                 image="/img/blog.png"
                 alt="Tech blog with user login and signup, post, and comment functionality"
               />
@@ -50,6 +62,7 @@ function Portfolio() {
                 title="Christmas Movie Generator"
                 github="https://github.com/CookingMeister/christmas-movie-generator"
                 deployment="https://samgreenwood84.github.io/christmas-movie-generator/"
+                description="User interactive movie generator API"
                 image="/img/XmasMockup.png"
                 alt="Christmas Movie Generator with user input to generate a random movie"
               />
@@ -59,6 +72,7 @@ function Portfolio() {
                 title="Weather Dashboard"
                 github="https://github.com/CookingMeister/weather-dashboard"
                 deployment="https://cookingmeister.github.io/weather-dashboard/"
+                description="5-day weather forecast with search bar"
                 image="/img/weather.png"
                 alt="Weather dashboard with search bar to find current weather and a 5-day forecast"
               />
@@ -68,17 +82,9 @@ function Portfolio() {
                 title="Note Taker"
                 github="https://github.com/CookingMeister/note-taker-express"
                 deployment="https://note-taker-express-2rft.onrender.com/"
+                description="JSON note taking app"
                 image="/img/Note.png"
                 alt="Note Taker with add, edit and delete notes functionality"
-              />
-            </Fade>
-            <Fade duration={4000} triggerOnce>
-              <WorkCard
-                github="https://github.com/CookingMeister/timedQuiz-JS-04"
-                title="JS Quiz"
-                deployment="https://cookingmeister.github.io/timedQuiz-JS-04/"
-                image="/img/quiz.png"
-                alt="Timed JavaScript quiz with start and end buttons"
               />
             </Fade>
           </Zoom>

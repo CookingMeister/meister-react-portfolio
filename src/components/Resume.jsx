@@ -29,6 +29,7 @@ export default function Resume() {
         'React-Router',
         'Node',
         'Express',
+        'Spring Boot',
         'Apollo Server',
         'Bootstrap',
       ],
@@ -47,7 +48,7 @@ export default function Resume() {
     },
     {
       title: 'Languages',
-      skills: ['JavaScript (ES6+)', 'HTML', 'CSS'],
+      skills: ['Java', 'JavaScript (ES6+)', 'HTML', 'CSS'],
     },
     {
       title: 'Databases',

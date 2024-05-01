@@ -18,20 +18,35 @@ function Footer() {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        height: '16vh',
-        backgroundColor: 'rgb(30, 6, 245)',
-        padding: '18vh',
+        height: '24vh',
+        backgroundImage: "url('/img/Designer.png')",
+        backgroundPosition: 'center',
+        // padding: '8vh',
         fontSize: '80%',
+        position: 'relative',
+        zIndex: 1,
       }}
     >
-      <div className="container footer text-muted">
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backdropFilter: 'blur(4px)',
+          backgroundColor: 'rgba(0, 0, 0, 0.55)',
+          zIndex: -1,
+        }}
+      ></div>
+      <div className="container footer text-white">
         <footer>
           <div className="social d-flex justify-content-center align-items-center">
             <a href="https://github.com/CookingMeister?tab=repositories">
-              <i class="fab fa-github px-3 py-4"></i>
+              <i className="fab fa-github px-3 py-4"></i>
             </a>
             <a href="https://www.linkedin.com/in/shawn-meister-bb646b29a/">
-              <i class="fab fa-linkedin px-3 py-4"></i>
+              <i className="fab fa-linkedin px-3 py-4"></i>
             </a>
           </div>
           <span>&copy; {getDate()} Meister</span>

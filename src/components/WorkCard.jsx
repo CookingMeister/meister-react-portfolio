@@ -60,6 +60,7 @@ const WorkCard = (props) => {
         {/* Overlay div */}
         <div className="rounded-4" style={overlayStyles}>
           <h4>{props.title}</h4>
+          <p>{props.description}</p>
           <div style={{ display: 'flex' }}>
             <a href={props.deployment} className="py-2">
               <i
