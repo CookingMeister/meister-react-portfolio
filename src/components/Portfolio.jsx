@@ -11,7 +11,7 @@ function Portfolio() {
     fontFamily: 'Roboto, sans-serif',
     backgroundImage:
       'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-    paddingTop: '28vh',
+    paddingTop: '20vh',
     paddingBottom: '14vh',
   };
 
@@ -19,11 +19,13 @@ function Portfolio() {
     <section id="Work" style={styles}>
       <div className="container px-4">
         <h2
-          className="fs-2 pb-5"
+          className="fs-2 pb-4"
           style={{ textShadow: '1px 1px 3px black', color: 'antiquewhite' }}
         >
           Portfolio
         </h2>
+        <div className="border-top border-light my-3" style={{ opacity: '0.6' }}></div>
+
         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-xl-3 align-items-stretch g-5 py-5">
           {/* Zoom and Fade Animations */}
           <Zoom cascade damping={0.2} triggerOnce>

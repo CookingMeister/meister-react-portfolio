@@ -8,9 +8,7 @@ import { Fade } from 'react-awesome-reveal';
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
   const [emailError, setEmailError] = useState('');
-  const [messageError, setMessageError] = useState('');
 
   useEffect(() => {
     // Validate email
@@ -20,14 +18,7 @@ function Contact() {
     } else {
       setEmailError('');
     }
-
-    // Validate message
-    if (message.trim() === '') {
-      setMessageError('Please enter a message.');
-    } else {
-      setMessageError('');
-    }
-  }, [email, message]);
+  }, [email]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,8 +42,8 @@ function Contact() {
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-        paddingTop: '27vh',
-        paddingBottom: '8vh',
+        paddingTop: '20vh',
+        paddingBottom: '10vh',
         color: 'antiquewhite',
         borderRadius: '2px',
       }}
@@ -61,17 +52,22 @@ function Contact() {
         <h3
           className="fs-2"
           style={{
-            marginTop: '1vh',
-            marginBottom: '10vh',
+            marginBottom: '2.5rem',
             textShadow: '1px 1px 3px black',
           }}
         >
           Contact Me
         </h3>
+
+        <div
+          className="border-top border-light mb-5 mt-4"
+          style={{ opacity: '0.6' }}
+        ></div>
+
         {/* Fade Animation */}
         <Fade duration={1900} triggerOnce>
           <form
-            className="row gy-2 gx-4 align-items-center justify-content-center mx-auto w-100 d-block"
+            className="row gy-2 gx-4 align-items-center justify-content-center mx-auto w-100 d-block my-1"
             onSubmit={handleSubmit}
           >
             <div className="col-md-12 col-lg-6 mx-auto pb-3">
@@ -86,6 +82,7 @@ function Contact() {
                 placeholder="Enter your name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                required
               />
             </div>
             <div className="col-md-12 col-lg-6 mx-auto pb-1">
@@ -100,16 +97,19 @@ function Contact() {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
               {/* Display email error if there is one  */}
               {emailError && (
                 <p
-                style={{ textShadow: '1px 1px 2px black', color: '#15f5ba', letterSpacing: '1px' }}
+                  style={{
+                    textShadow: '1px 1px 2px black',
+                    color: '#15f5ba',
+                    letterSpacing: '1px',
+                  }}
                   className="text-center mt-3"
                 >
-                  <em>
-                    {emailError}
-                  </em>
+                  <em>{emailError}</em>
                 </p>
               )}
             </div>
@@ -123,27 +123,23 @@ function Contact() {
                 id="message"
                 rows="5"
                 placeholder="Enter your message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
-              {/* Display message error if there is one  */}
-              {messageError && (
-                <p
-                  style={{ textShadow: '1px 1px 2px black', color: '#15f5ba', letterSpacing: '1px' }}
-                  className="text-center mt-3"
+
+              <div className="d-flex justify-content-end">
+                <button
+                  type="submit"
+                  className="btn btn-dark my-4"
+                  style={{
+                    width: '25%',
+                    border: '1px solid antiquewhite',
+                    borderRadius: '50px',
+                    transition: 'all 0.3s',
+                  }}
                 >
-                  <em>
-                    {messageError}
-                  </em>
-                </p>
-              )}
-              <button
-                type="submit"
-                className="btn btn-dark mt-2"
-                style={{ width: '25%', border: '1px solid antiquewhite', borderRadius: '4px' }}
-              >
-                Submit
-              </button>
+                  Submit
+                </button>
+              </div>
             </div>
           </form>
         </Fade>

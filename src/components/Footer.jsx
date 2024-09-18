@@ -21,7 +21,6 @@ function Footer() {
         height: '24vh',
         backgroundImage: "url('/img/Designer.png')",
         backgroundPosition: 'center',
-        // padding: '8vh',
         fontSize: '80%',
         position: 'relative',
         zIndex: 1,
@@ -41,11 +40,19 @@ function Footer() {
       ></div>
       <div className="container footer text-white">
         <footer>
-          <div className="social d-flex justify-content-center align-items-center">
+          <div
+            className="social d-flex justify-content-center align-items-center"
+            onMouseOver={(e) => (e.target.style.color = '#0dcaf0')}
+            onMouseOut={(e) => (e.target.style.color = 'white')}
+          >
             <a href="https://github.com/CookingMeister?tab=repositories">
               <i className="fab fa-github px-3 py-4"></i>
             </a>
-            <a href="https://www.linkedin.com/in/shawn-meister-bb646b29a/">
+            <a
+              href="https://www.linkedin.com/in/shawn-meister-bb646b29a/"
+              onMouseOver={(e) => (e.target.style.color = '#0dcaf0')}
+              onMouseOut={(e) => (e.target.style.color = 'white')}
+            >
               <i className="fab fa-linkedin px-3 py-4"></i>
             </a>
           </div>

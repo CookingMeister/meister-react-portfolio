@@ -13,12 +13,12 @@ export default function Resume() {
     color: 'antiquewhite',
     textDecoration: 'none',
     textShadow: '1px 1px 3px black',
-    li: {
-      marginLeft: '-0.5rem',
-      marginTop: '1rem',
-      color: 'antiquewhite',
-      textShadow: '1px 1px 3px black',
-    },
+    // li: {
+    //   marginLeft: '-0.5rem',
+    //   marginTop: '1rem',
+    //   color: 'antiquewhite',
+    //   textShadow: '1px 1px 3px black',
+    // },
   };
 
   const skillCategories = [
@@ -63,7 +63,7 @@ export default function Resume() {
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-        paddingTop: '27vh',
+        paddingTop: '20vh',
         paddingBottom: '8vh',
       }}
     >
@@ -71,29 +71,31 @@ export default function Resume() {
         <h2
           className="fs-2"
           style={{
-            color: 'antiquewhite',
-            marginTop: '1vh',
-            marginBottom: '8vh',
+            color: 'antiquewhite',            
             textShadow: '1px 1px 3px black',
+            marginBottom: '2.5rem',
           }}
         >
           Resume
         </h2>
+        <div className="border-top border-light my-3" style={{ opacity: '0.6' }}></div>
+
         <Fade duration={2100} triggerOnce>
           <div className="row row-cols align-items-stretch g-4 p-5 mb-3">
             <div className="col-lg-12 d-flex justify-content-center mx-lg-5 mx-2">
               <div className="row">
                 <DownloadLink />
                 <h4
-                  className="pb-4"
                   style={{
                     color: 'antiquewhite',
                     textShadow: '1px 1px 3px black',
                     marginLeft: '-2vw',
                   }}
                 >
-                  Skills:
+                  Skills
                 </h4>
+                <div className="border-top border-light mt-4 mb-5" style={{ opacity: '0.6' }}></div>
+
                 {skillCategories.map((category, index) => (
                   <SkillList
                     key={index}

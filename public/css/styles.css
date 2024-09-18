@@ -30,11 +30,14 @@ body {
   }
 
   /* Footer socials */
-  .social i:hover {
-    color: #C20024;
-  }
 
   .social i {
     font-size: 1.5rem;
     color: antiquewhite;
   }
+
+  .btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  

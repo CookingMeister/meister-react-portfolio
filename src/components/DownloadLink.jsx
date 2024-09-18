@@ -1,23 +1,24 @@
 import React from 'react';
 
 const DownloadLink = () => {
-  return (    
+  return (
+    <div
+      className="text-center mb-2 pb-5">
       <a
         href="/Resume_Apr2024.docx"
         download
         style={{
           textDecoration: 'none',
-          color: '#C20024',
-          textShadow: '1px 1px 3px black',
-          fontSize: '1.2rem',
-          marginLeft: '28%',
-          width: '40%',
+          width: 'max-content',
+          transition: 'all 0.3s',
+          borderRadius: '50px'
         }}
-        className="my-2 mb-5 pb-5 text-center"
+        className="btn btn-outline-info btn-lg px-4"
       >
-        <i class="fas fa-file-download mx-2"></i>
+        <i class="fas fa-file-download me-3"></i>
         Download Resume
       </a>
+    </div>
   );
 };
 

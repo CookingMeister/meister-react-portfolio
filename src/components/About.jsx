@@ -6,6 +6,7 @@
  */
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
+import Icon from './Icon';
 
 function About() {
   return (
@@ -15,7 +16,8 @@ function About() {
         fontFamily: 'Roboto, sans-serif',
         backgroundImage:
           'linear-gradient(45deg, rgb(30, 6, 245), rgba(0, 110, 255, 0.777))',
-        paddingTop: '7vh',
+        padding: '5vh 0',
+        minHeight: '70vh',
       }}
     >
       <div className="container">
@@ -42,12 +44,13 @@ function About() {
                 Fredericton, New Brunswick.
               </p>
             </Fade>
-            <div style={{ margin: '10%' }}>
+            <div style={{ margin: '8%' }}>
               <img
                 src="/img/profile.png"
                 className="profile-pic my-5 img-fluid"
-                alt="Sunny summer day profile picture of young man smiling outside."
+                alt="Sunny summer day profile of young man smiling outside."
               />
+              
             </div>
           </div>
         </div>
